@@ -1,0 +1,16 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPathPattern": "/requestCount"
+  },
+  "response": {
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "fixedDelayMilliseconds": 0,
+    "jsonBody": {
+      "requestCount": 0
+    },
+    "status": 200
+  }
+}

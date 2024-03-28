@@ -1,0 +1,14 @@
+{
+  "request": {
+    "method": "POST",
+    "urlPathPattern": "/api/kyc"
+  },
+  "response": {
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "transformer": "VerifyKYCTransformer",
+    "fixedDelayMilliseconds": "5",
+    "status": 201
+  }
+}
