@@ -1,11 +1,13 @@
 from falcon import Request
 
+from src.transformer.transformer import BaseTransformer
 
-class VerifyKYCTransformer(object):
+
+class VerifyKYCTransformer(BaseTransformer):
 
     def __init__(self, req: Request):
         self.req = req
 
-    def generate_dynamic_response(self) -> str:
-       # TODO write your own logic to generate the dynamic response
-       return str({"VerifyKYCTransformer": "generate_dynamic_response" })
+    def transform(self):
+        # TODO write your own logic to generate the dynamic response
+        return str({"VerifyKYCTransformer": "generate_dynamic_response"})

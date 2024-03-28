@@ -41,7 +41,7 @@ class RouteResponse(object):
         transformer_class = mock_object.response.transformer
         for transformer in transformers:
             if transformer.__name__ == mock_object.response.transformer:
-                response = transformer(req).generate_dynamic_response()
+                response = transformer(req).transform()
                 return response
         raise HTTPException(f"Transformer class {transformer_class} not found in the package")
 
